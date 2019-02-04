@@ -27,131 +27,159 @@
                 </div>
             </nav>
             <ul class="sidenav" id="mobile-demo">
-                    <li><a href="#">Back to Portfolio</a></li>
-                    <li><a href="#">Github</a></li>
-                    <li><a href="#">What I learned</a></li>
+                <li><a href="#">Back to Portfolio</a></li>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">What I learned</a></li>
             </ul>
         </section>
         <section class="form">
             <form action="">
-                <label for="meeting_date">Meeting Date:</label>
-                <input type="date">
-                <label for="people_count">Number of Attendees:</label>
-                <input type="text">
-                <div class="room_selector">
-                    <table>
-                        <tr>
-                            <td><button>Hidden</button></td>
-                            <td><button>c5</button></td>
-                        </tr>
-                        <tr>
-                            <td><button>c2</button></td>
-                            <td><button>c4</button></td>
-                        </tr>
-                        <tr>
-                            <td><button>c1</button></td>
-                            <td><button>c3</button></td>
-                        </tr>
-                    </table>
-                    <span class="capacity">Occupant capacity: 0/100</span>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <label for="meeting_date">Meeting Date:</label>
+                        <input type="text" class="datepicker">
+                    </div>
+                    <div class="input-field col s6">
+                        <label for="people_count">Number of Attendees:</label>
+                        <input type="text">
+                    </div>
                 </div>
-                <div class="time_slots">
-                    <h2>Time Slots</h2>
-                    <table>
-                        <tr>
-                            <th>C5</th>
-                            <td><button>7am</button></td>
-                            <td><button>8am</button></td>
-                            <td><button>9am</button></td>
-                            <td><button>10am</button></td>
-                            <td><button>11am</button></td>
-                            <td><button>12pm</button></td>
-                            <td><button>1pm</button></td>
-                            <td><button>2pm</button></td>
-                            <td><button>3pm</button></td>
-                            <td><button>4pm</button></td>
-                            <td><button>5pm</button></td>
-                            <td><button>6pm</button></td>
-                            <td><button>7pm</button></td>
-                            <td><button>8pm</button></td>
-                        </tr>
-                        <tr>
-                            <th>C4</th>
-                            <td><button>7am</button></td>
-                            <td><button>8am</button></td>
-                            <td><button>9am</button></td>
-                            <td><button>10am</button></td>
-                            <td><button>11am</button></td>
-                            <td><button>12pm</button></td>
-                            <td><button>1pm</button></td>
-                            <td><button>2pm</button></td>
-                            <td><button>3pm</button></td>
-                            <td><button>4pm</button></td>
-                            <td><button>5pm</button></td>
-                            <td><button>6pm</button></td>
-                            <td><button>7pm</button></td>
-                            <td><button>8pm</button></td>
-                        </tr>
-                        <tr>
-                            <th>C3</th>
-                            <td><button>7am</button></td>
-                            <td><button>8am</button></td>
-                            <td><button>9am</button></td>
-                            <td><button>10am</button></td>
-                            <td><button>11am</button></td>
-                            <td><button>12pm</button></td>
-                            <td><button>1pm</button></td>
-                            <td><button>2pm</button></td>
-                            <td><button>3pm</button></td>
-                            <td><button>4pm</button></td>
-                            <td><button>5pm</button></td>
-                            <td><button>6pm</button></td>
-                            <td><button>7pm</button></td>
-                            <td><button>8pm</button></td>
-                        </tr>
-                        <tr>
-                            <th>C2</th>
-                            <td><button>7am</button></td>
-                            <td><button>8am</button></td>
-                            <td><button>9am</button></td>
-                            <td><button>10am</button></td>
-                            <td><button>11am</button></td>
-                            <td><button>12pm</button></td>
-                            <td><button>1pm</button></td>
-                            <td><button>2pm</button></td>
-                            <td><button>3pm</button></td>
-                            <td><button>4pm</button></td>
-                            <td><button>5pm</button></td>
-                            <td><button>6pm</button></td>
-                            <td><button>7pm</button></td>
-                            <td><button>8pm</button></td>
-                        </tr>
-                        <tr>
-                            <th>C1</th>
-                            <td><button>7am</button></td>
-                            <td><button>8am</button></td>
-                            <td><button>9am</button></td>
-                            <td><button>10am</button></td>
-                            <td><button>11am</button></td>
-                            <td><button>12pm</button></td>
-                            <td><button>1pm</button></td>
-                            <td><button>2pm</button></td>
-                            <td><button>3pm</button></td>
-                            <td><button>4pm</button></td>
-                            <td><button>5pm</button></td>
-                            <td><button>6pm</button></td>
-                            <td><button>7pm</button></td>
-                            <td><button>8pm</button></td>
-                        </tr>
-                    </table>
+                <div class="row">
+                    <div class="input-field col s2">
+                        <div class="room_selector">
+                                <h3>Rooms</h3>
+                            <table>
+                                <tr>
+                                    <td><button>Hidden</button></td>
+                                    <td><button>c5</button></td>
+                                </tr>
+                                <tr>
+                                    <td><button>c2</button></td>
+                                    <td><button>c4</button></td>
+                                </tr>
+                                <tr>
+                                    <td><button>c1</button></td>
+                                    <td><button>c3</button></td>
+                                </tr>
+                            </table>
+                            <span class="capacity">Occupant capacity: 0/100</span>
+                        </div>
+                    </div>
+                    <div class="input-field col s10">
+                        <div class="time_slots">
+                            <h3>Time Slots</h3>
+                            <table>
+                                <tr>
+                                    <th>Room 1</th>
+                                    <td><button>7am</button></td>
+                                    <td><button>8am</button></td>
+                                    <td><button>9am</button></td>
+                                    <td><button>10am</button></td>
+                                    <td><button>11am</button></td>
+                                    <td><button>12pm</button></td>
+                                    <td><button>1pm</button></td>
+                                    <td><button>2pm</button></td>
+                                    <td><button>3pm</button></td>
+                                    <td><button>4pm</button></td>
+                                    <td><button>5pm</button></td>
+                                    <td><button>6pm</button></td>
+                                    <td><button>7pm</button></td>
+                                    <td><button>8pm</button></td>
+                                </tr>
+                                <tr>
+                                    <th>Room 2</th>
+                                    <td><button>7am</button></td>
+                                    <td><button>8am</button></td>
+                                    <td><button>9am</button></td>
+                                    <td><button>10am</button></td>
+                                    <td><button>11am</button></td>
+                                    <td><button>12pm</button></td>
+                                    <td><button>1pm</button></td>
+                                    <td><button>2pm</button></td>
+                                    <td><button>3pm</button></td>
+                                    <td><button>4pm</button></td>
+                                    <td><button>5pm</button></td>
+                                    <td><button>6pm</button></td>
+                                    <td><button>7pm</button></td>
+                                    <td><button>8pm</button></td>
+                                </tr>
+                                <tr>
+                                    <th>Room 3</th>
+                                    <td><button>7am</button></td>
+                                    <td><button>8am</button></td>
+                                    <td><button>9am</button></td>
+                                    <td><button>10am</button></td>
+                                    <td><button>11am</button></td>
+                                    <td><button>12pm</button></td>
+                                    <td><button>1pm</button></td>
+                                    <td><button>2pm</button></td>
+                                    <td><button>3pm</button></td>
+                                    <td><button>4pm</button></td>
+                                    <td><button>5pm</button></td>
+                                    <td><button>6pm</button></td>
+                                    <td><button>7pm</button></td>
+                                    <td><button>8pm</button></td>
+                                </tr>
+                                <tr>
+                                    <th>Room 4</th>
+                                    <td><button>7am</button></td>
+                                    <td><button>8am</button></td>
+                                    <td><button>9am</button></td>
+                                    <td><button>10am</button></td>
+                                    <td><button>11am</button></td>
+                                    <td><button>12pm</button></td>
+                                    <td><button>1pm</button></td>
+                                    <td><button>2pm</button></td>
+                                    <td><button>3pm</button></td>
+                                    <td><button>4pm</button></td>
+                                    <td><button>5pm</button></td>
+                                    <td><button>6pm</button></td>
+                                    <td><button>7pm</button></td>
+                                    <td><button>8pm</button></td>
+                                </tr>
+                                <tr>
+                                    <th>Room 5</th>
+                                    <td><button>7am</button></td>
+                                    <td><button>8am</button></td>
+                                    <td><button>9am</button></td>
+                                    <td><button>10am</button></td>
+                                    <td><button>11am</button></td>
+                                    <td><button>12pm</button></td>
+                                    <td><button>1pm</button></td>
+                                    <td><button>2pm</button></td>
+                                    <td><button>3pm</button></td>
+                                    <td><button>4pm</button></td>
+                                    <td><button>5pm</button></td>
+                                    <td><button>6pm</button></td>
+                                    <td><button>7pm</button></td>
+                                    <td><button>8pm</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+
                 </div>
+
+                <div class="row">
+                    <div class="input-field col s4">
+                        <label for="event_name">Event Name:</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-field col s4">
+                        <label for="event_name">Hosted By:</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-field col s4">
+                        <label for="event_name">Contact Phone:</label>
+                        <input type="text">
+                    </div>
+                </div>
+
                 <div class="event_info">
-                    <label for="event_name">Event Name:</label>
-                    <input type="text">
-                    <label for="event_name">Hosted By:</label>
-                    <input type="text">
-                    <label for="event_name">Contact Phone:</label>
-                    <input type="text">
+
+
+
                 </div>
                 <div class="special_req">
                     <label for="chromebooks_needed">Chromebooks</label>
@@ -170,6 +198,12 @@
         <section class="footer"></section>
     </div>
     <script type="text/javascript" src="js/materialize.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.datepicker');
+    var instances = M.Datepicker.init(elems, options);
+  });
+    </script>
     <!-- <script type="text/javascript" src="./js/index.js"></script> -->
 </body>
 
